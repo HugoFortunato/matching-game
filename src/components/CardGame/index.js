@@ -1,5 +1,5 @@
-import './style.css'
 import alura from '../../../images/alura-pixel.png'
+import './style.css'
 
 function CardGame() {
   return `
