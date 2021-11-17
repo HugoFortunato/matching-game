@@ -1,11 +1,9 @@
-import CardGame from './src/components/CardGame'
+import BoardGame from './src/objects/BoardGame'
+import './src/styles/elements/base.css'
 import './src/styles/generic/reset.css'
 import './src/styles/settings/colors.css'
-import './src/styles/elements/base.css'
 
 const $root = document.querySelector('#root')
-const $htmlCardGame = CardGame()
+const $htmlBoardGame = BoardGame(6)
 
-console.log($htmlCardGame)
-
-$root.insertAdjacentHTML('beforeend', $htmlCardGame)
+$root.insertAdjacentHTML('beforeend', $htmlBoardGame)
