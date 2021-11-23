@@ -11,9 +11,9 @@ const playerTwo = 'Player 2'
 
 $root.insertAdjacentHTML('beforeend',
     ` 
-    ${PlayerName(playerOne)}
-    ${PlayerName(playerTwo)}
-    ${BoardGame(6)},
+    ${PlayerName('Player1')}
+    ${PlayerName('Player2')}
+    ${BoardGame(6)}
    
     `
 )

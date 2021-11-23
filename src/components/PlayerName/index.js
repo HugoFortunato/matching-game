@@ -1,7 +1,9 @@
+import "./style.css";
+ 
  function PlayerName(playerNumbers) {
     return `
-        <p>${playerNumbers}</p>
-    `
+        <p class="player-name">${playerNumbers}</p>
+    `;
 }
 
 export default PlayerName
