@@ -1,9 +1,9 @@
-import CardGame from '../../components/CardGame';
 import './style.css';
+import CardFrontBack from '../../components/CardFrontBack' 
 
 function BoardGame(amountCards) {
-    const $htmlCardGame = CardGame()
-    const $htmlContent = $htmlCardGame.repeat(amountCards);
+    const $htmlCardFrontBack = CardFrontBack()
+    const $htmlContent = $htmlCardFrontBack.repeat(amountCards);
 
     
     return`
