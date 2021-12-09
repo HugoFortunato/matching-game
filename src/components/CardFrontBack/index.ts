@@ -7,6 +7,8 @@ function CardFrontBack() {
         const $origin = event.target
         const $cardFrontBack = $origin.closest('.card-front-back')
 
+        // $cardFrontBack.classList.add('-active')
+
         // Dois métodos a seguir para verificar se a classe -active é existe ou não.
 
         //1° método
@@ -14,8 +16,14 @@ function CardFrontBack() {
 
         //2° método
         $cardFrontBack.classList.toggle('-active')
-    } 
+    
+        // Vira o card em 2000ms
+        setTimeout(() => {$cardFrontBack.classList.remove('-active')}, 2000)  
+        
 
+        
+    } 
+   
   return /*html*/ `
     <article class="card-front-back" onClick="cardFrontBack.handleClick(event)">
       <div class="card -front">
